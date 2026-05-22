@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronen Turns One! 🎂 Magical First Birthday Invitation</title>
+  <meta name="description" content="Join us for Ronen Penuel Paul Mundel's magical first birthday celebration — a Disney-inspired blue jungle fantasy filled with joy, love, and blessings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== CANVAS FOR PARTICLES ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== FLOATING DECORATIONS (persistent) ===== -->
+  <div id="floating-decorations" aria-hidden="true"></div>
+
+  <!-- ===== SECTION 1: OPENING / BIBLE VERSE ===== -->
+  <section id="opening" class="section opening-section">
+    <div class="opening-bg-layers">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="cloud cloud-4"></div>
+      <div class="stars-container" id="stars-container"></div>
+      <div class="moon"></div>
+    </div>
+
+    <div class="opening-content">
+      <div class="verse-card" id="verse-card">
+        <div class="verse-glow"></div>
+        <div class="verse-icon">✦</div>
+        <blockquote class="verse-text">
+          "Children are a heritage from the Lord,<br />
+          offspring a reward from him."
+        </blockquote>
+        <cite class="verse-ref">— Psalm 127:3</cite>
+        <div class="verse-sparkles">
+          <span class="sparkle s1">✦</span>
+          <span class="sparkle s2">✧</span>
+          <span class="sparkle s3">✦</span>
+          <span class="sparkle s4">✧</span>
+          <span class="sparkle s5">✦</span>
+          <span class="sparkle s6">✧</span>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" id="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll to discover the magic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: MAIN INVITATION ===== -->
+  <section id="invitation" class="section invitation-section">
+    <div class="jungle-top-border" aria-hidden="true"></div>
+
+    <div class="invitation-content">
+      <div class="confetti-burst" id="confetti-container"></div>
+
+      <div class="age-badge animate-on-scroll">
+        <span class="age-number">1</span>
+        <span class="age-text">Year Old!</span>
+      </div>
+
+      <h1 class="main-title animate-on-scroll">
+        <span class="title-line title-name">Ronen Penuel Paul Mundel</span>
+        <span class="title-line title-turns">Turns One!</span>
+      </h1>
+
+      <p class="subtitle animate-on-scroll">
+        Join us for a magical celebration filled with<br />
+        <strong>joy, love, laughter, and blessings.</strong>
+      </p>
+
+      <div class="decorative-divider animate-on-scroll">
+        <span class="divider-leaf">🌿</span>
+        <span class="divider-star">⭐</span>
+        <span class="divider-leaf">🌿</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: CUTE ANIMALS PARADE ===== -->
+  <section id="animals" class="section animals-section">
+    <h2 class="section-heading animate-on-scroll">
+      <span class="heading-icon">🌴</span>
+      Ronen's Jungle Friends
+      <span class="heading-icon">🌴</span>
+    </h2>
+
+    <div class="animals-grid">
+      <div class="animal-card animate-on-scroll" data-delay="0">
+        <div class="animal-img-wrap">
+          <img src="images/baby_elephant.png" alt="Baby Elephant" loading="lazy" />
+        </div>
+        <span class="animal-name">Ellie the Elephant</span>
+      </div>
+      <div class="animal-card animate-on-scroll" data-delay="100">
+        <div class="animal-img-wrap">
+          <img src="images/baby_giraffe.png" alt="Baby Giraffe" loading="lazy" />
+        </div>
+        <span class="animal-name">Gigi the Giraffe</span>
+      </div>
+      <div class="animal-card animate-on-scroll" data-delay="200">
+        <div class="animal-img-wrap">
+          <img src="images/baby_monkey.png" alt="Baby Monkey" loading="lazy" />
+        </div>
+        <span class="animal-name">Momo the Monkey</span>
+      </div>
+      <div class="animal-card animate-on-scroll" data-delay="300">
+        <div class="animal-img-wrap">
+          <img src="images/jungle_animals.png" alt="Jungle Friends Together" loading="lazy" />
+        </div>
+        <span class="animal-name">The Whole Gang!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: EVENT DETAILS ===== -->
+  <section id="details" class="section details-section">
+    <div class="details-card animate-on-scroll">
+      <h2 class="section-heading">
+        <span class="heading-icon">🎉</span>
+        Celebration Details
+        <span class="heading-icon">🎉</span>
+      </h2>
+
+      <div class="details-grid">
+        <div class="detail-item">
+          <div class="detail-icon">📅</div>
+          <div class="detail-label">Date</div>
+          <div class="detail-value">27th May 2026</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon">🕣</div>
+          <div class="detail-label">Time</div>
+          <div class="detail-value">8:30 PM</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon">⛪</div>
+          <div class="detail-label">Venue</div>
+          <div class="detail-value">Centenary Baptist Church,<br />Secunderabad</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-icon">💕</div>
+          <div class="detail-label">Loving Parents</div>
+          <div class="detail-value">Richitha Shuneeya &amp; Victor Paul</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: PHOTO FRAME ===== -->
+  <section id="photo" class="section photo-section">
+    <h2 class="section-heading animate-on-scroll">
+      <span class="heading-icon">📸</span>
+      Our Little Star
+      <span class="heading-icon">⭐</span>
+    </h2>
+
+    <div class="photo-frame-container animate-on-scroll">
+      <div class="photo-frame-glow"></div>
+      <div class="photo-frame-leaves photo-leaves-left" aria-hidden="true">
+        <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 180C90 140 40 120 20 80C10 50 30 20 60 10C80 30 100 70 95 110C92 140 100 160 100 180Z" fill="url(#leaf-grad-l)" opacity="0.8"/>
+          <path d="M80 200C75 160 30 150 15 110C5 80 25 50 55 40C70 60 85 95 80 135C78 165 80 185 80 200Z" fill="url(#leaf-grad-l2)" opacity="0.6"/>
+          <defs>
+            <linearGradient id="leaf-grad-l" x1="20" y1="10" x2="100" y2="180">
+              <stop stop-color="#2dd4a8"/>
+              <stop offset="1" stop-color="#0ea572"/>
+            </linearGradient>
+            <linearGradient id="leaf-grad-l2" x1="15" y1="40" x2="80" y2="200">
+              <stop stop-color="#34d399"/>
+              <stop offset="1" stop-color="#059669"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="photo-frame-leaves photo-leaves-right" aria-hidden="true">
+        <svg viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 180C30 140 80 120 100 80C110 50 90 20 60 10C40 30 20 70 25 110C28 140 20 160 20 180Z" fill="url(#leaf-grad-r)" opacity="0.8"/>
+          <path d="M40 200C45 160 90 150 105 110C115 80 95 50 65 40C50 60 35 95 40 135C42 165 40 185 40 200Z" fill="url(#leaf-grad-r2)" opacity="0.6"/>
+          <defs>
+            <linearGradient id="leaf-grad-r" x1="100" y1="10" x2="20" y2="180">
+              <stop stop-color="#2dd4a8"/>
+              <stop offset="1" stop-color="#0ea572"/>
+            </linearGradient>
+            <linearGradient id="leaf-grad-r2" x1="105" y1="40" x2="40" y2="200">
+              <stop stop-color="#34d399"/>
+              <stop offset="1" stop-color="#059669"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="photo-frame">
+        <div class="photo-frame-sparkle sp1">✦</div>
+        <div class="photo-frame-sparkle sp2">✧</div>
+        <div class="photo-frame-sparkle sp3">✦</div>
+        <div class="photo-frame-sparkle sp4">✧</div>
+        <div class="photo-frame-sparkle sp5">⭐</div>
+        <div class="photo-frame-sparkle sp6">✦</div>
+
+        <!-- ==========================================
+             INSERT BABY PHOTO HERE:
+             Replace the placeholder below with:
+             <img src="images/your-baby-photo.jpg" alt="Baby Ronen" />
+        ============================================ -->
+        <div class="photo-placeholder" id="baby-photo-slot">
+          <img src ="images/C:\Users\Dell\Downloads.jpg" alt="Baby Ronen" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: LOCATION / MAP ===== -->
+  <section id="location" class="section location-section">
+    <h2 class="section-heading animate-on-scroll">
+      <span class="heading-icon">📍</span>
+      Find Us Here
+      <span class="heading-icon">📍</span>
+    </h2>
+
+    <div class="map-container animate-on-scroll">
+      <div class="map-frame">
+        <iframe 
+          id="map-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2!2d78.4983!3d17.4399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1c8fffffff%3A0x0!2sCentenary+Baptist+Church+Secunderabad!5e0!3m2!1sen!2sin!4v1"
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Centenary Baptist Church, Secunderabad Location">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="location-btn-container animate-on-scroll">
+      <a 
+        href="https://www.google.com/maps/dir/?api=1&destination=Centenary+Baptist+Church+Secunderabad" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="location-btn"
+        id="get-location-btn"
+      >
+        <span class="btn-icon">🗺️</span>
+        <span class="btn-text">Get Live Location</span>
+        <span class="btn-sparkle">✨</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer" class="footer-section">
+    <div class="footer-content">
+      <div class="footer-hearts">💙 💙 💙</div>
+      <p class="footer-text">
+        Made with love for our little blessing<br/>
+        <strong>Ronen Penuel Paul Mundel</strong>
+      </p>
+      <p class="footer-tagline">🌿 A Blue Jungle Fantasy 🌿</p>
+      <div class="footer-animals">🦁 🐘 🦒 🐵 🦓 🦜</div>
+    </div>
+  </footer>
+
+  <!-- ===== BACKGROUND MUSIC TOGGLE (optional) ===== -->
+  <button class="music-toggle" id="music-toggle" aria-label="Toggle background music" title="Toggle Music">
+    🎵
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
