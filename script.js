@@ -324,8 +324,8 @@
 
   // ============ COUNTDOWN ELEMENT ============
   function initCountdown() {
-    // Event date: 27 May 2026, 8:30 PM IST
-    const eventDate = new Date('2026-05-27T19:30:00+05:30');
+    // Event date: 27 May 2026, 7:30 PM IST
+    const eventDate = new Date('2026-05-27T20:30:00+05:30');
 
     function updateCountdown() {
       const now = new Date();
